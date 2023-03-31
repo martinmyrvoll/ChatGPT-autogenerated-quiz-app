@@ -6,11 +6,20 @@ This app is a simple command-line tool for generating and answering quizzes base
 This project requires Node.js and the npm package manager. In addition, the project requires the installation of the necessary dependencies, which are listed in the package.json file. To install the dependencies, run the following command in the project directory:
 
 ```npm install```
+
+Additionally, you will need to create a .env file in the root directory of the project and add your OpenAI API key as an environment variable. To do this, follow these steps:
+
+1. Get an API key from the [OpenAI API website](https://platform.openai.com/account/api-keys).
+2. In the root directory of the project, create a file called .env.
+3. Inside the .env file, add the following line: OPENAI_API_KEY=your-api-key-here.
+4. Replace your-api-key-here with your actual API key.
+5. Save the .env file.
+
 # Usage
-To run the Quizbot, simply run the following command:
+To run the Quiz app, simply run the following command:
 
-```node index.js```
+```node app.js```
 
-The program will prompt you for a quiz theme. Once you have entered a theme, Quizbot will generate a set of five questions based on the theme, and prompt you to provide answers to each question.
+The program will prompt you for a quiz theme. Once you have entered a theme, it will generate a set of five questions based on the theme, and prompt you to provide answers to each question.
 
-After you have provided answers to all of the questions, Quizbot will display the questions and your answers, and prompt you to provide feedback on the correctness of each answer.
+After you have provided answers to all of the questions, it will display the questions and your answers, and prompt you to provide feedback on the correctness of each answer.
