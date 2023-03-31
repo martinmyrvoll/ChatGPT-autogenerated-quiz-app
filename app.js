@@ -34,7 +34,7 @@ async function answer(theQuestions){
     }
     const questionsJoined = theQuestions.join();
     const answersJoined = responses.join(" - ");
-    const feedback = await ask("I will provide you with a set of five questions along with answers. Indicate what answer gains the user points. Correct=1 point. Incorrect=0 points. Make a table that looks nice in linux terminals 'Score'Question'Answer'Comment' Also, can you give a n/5 score at the end. This feedback goes directly to the user so be proffesional. The answers are separated with a '-'.\n"  + questionsJoined + "\n" + answersJoined);
+    const feedback = await ask("I will provide you with a set of five questions along with answers. Indicate what answer gains the user points. Correct=1 point. Incorrect=0 points. Make a table that looks nice in linux terminals 'Score'Question'Answer'Comment' Also, can you give a n/5 score at the end. This feedback goes directly to the user so be professional. The answers are separated with a '-'.\n"  + questionsJoined + "\n" + answersJoined);
     console.log(feedback);
     rl.close();
 }
